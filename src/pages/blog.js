@@ -1,9 +1,11 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 
+import Layout from "../components/layout"
+
 export default function Blog({ data }) {
     return (
-        <div>
+        <Layout>
             <h1>Posts</h1>
 
             {data.blog.posts.map(post => (
@@ -15,7 +17,7 @@ export default function Blog({ data }) {
                     <p>{post.excerpt}</p>
                 </article>
             ))}
-        </div>
+        </Layout>
     )
 }
 
