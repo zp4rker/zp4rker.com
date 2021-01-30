@@ -13,7 +13,7 @@ export default function Layout({ children }) {
     `)
 
     return (
-        <div>
+        <div className="container">
             <Link to="/">
                 <h1>{data.site.siteMetadata.title}</h1>
             </Link>

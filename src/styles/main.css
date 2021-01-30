@@ -1,0 +1,10 @@
+html {
+    /* background: url(../assets/pattern3.png); */
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 1rem auto;
+    padding: 50px;
+    width: 80%;
+}
