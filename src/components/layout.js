@@ -1,23 +1,11 @@
 import React from "react"
-import { graphql, useStaticQuery, Link } from "gatsby"
+import Header from "./header"
 
 export default function Layout({ children }) {
-    const data = useStaticQuery(graphql`
-        query {
-            site {
-                siteMetadata {
-                    title
-                }
-            }
-        }
-    `)
-
     return (
-        <div className="container">
-            <Link to="/">
-                <h1>{data.site.siteMetadata.title}</h1>
-            </Link>
+        <>
+            <Header />
             {children}
-        </div>
+        </>
     )
 }

@@ -17,6 +17,8 @@ module.exports = {
         path: `${__dirname}/src/blog/`
       }
     },
-    `gatsby-transformer-remark`
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-postcss`
   ],
 }
