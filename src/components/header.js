@@ -1,5 +1,6 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export default function Header() {
     const data = useStaticQuery(graphql`
@@ -11,16 +12,16 @@ export default function Header() {
     `)
 
     return (
-        <div className="grid grid-cols-4 mt-4 ml-2">
+        <div className="grid grid-cols-4 mt-4 ml-2 overflow-hidden">
             <div className="col-span-1">
-                <Link to="/">
+                <AniLink cover to="/" direction="right" bg="#000000" duration={0.75}>
                     <img src={data.image.publicURL} alt="logo" className="inline h-12 w-12"/>
-                </Link>
+                </AniLink>
             </div>
             <div className="col-start-3 col-span-2 grid justify-end pr-4">
-                <Link to="/blog" className="no-underline text-black transform-gpu transition-transform duration-200 hover:scale-125 hover:text-shadow-sm">
+                <AniLink cover to="/blog" bg="#000000" direction="left" duration={0.75} className="no-underline text-black transform-gpu transition-transform duration-200 hover:scale-125 hover:text-shadow-sm">
                     <h2 className="text-2xl font-semibold">blog</h2>
-                </Link>
+                </AniLink>
             </div>
         </div>
     )
