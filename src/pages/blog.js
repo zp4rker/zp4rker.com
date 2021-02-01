@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 
 export default function Blog({ data }) {
     return (
-        <Layout>
+        <Layout title="blog">
             <h1>Posts</h1>
 
             {data.blog.posts.map(post => (
