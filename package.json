@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "zp4rker.com",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "zp4rker's blog.",
+  "version": "0.0.1",
+  "author": "zp4rker <iam@zp4rker.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/zp4rker/zp4rker.com/issues"
   },
   "dependencies": {
     "gatsby": "^3.2.1",
@@ -35,15 +35,18 @@
   "devDependencies": {
     "prettier": "2.2.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/zp4rker/zp4rker.com",
   "keywords": [
-    "gatsby"
+    "zp4rker",
+    "zp4rker.com",
+    "zparker",
+    "zp18"
   ],
-  "license": "0BSD",
+  "license": "Apache-2.0",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/zp4rker/zp4rker.com.git"
   },
   "scripts": {
     "build": "gatsby build",
