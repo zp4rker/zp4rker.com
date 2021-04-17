@@ -3,7 +3,7 @@ module.exports = {
     title: `zp4rker's site`,
     author: {
       name: `zp4rker`,
-      summary: `a layman doing his best to seek knowledge in a time where ignorance prevails.`,
+      summary: `a layman doing his best to seek and spread knowledge in a time where ignorance prevails.`,
     },
     description: `zp4rker's personal blog`,
     siteUrl: `https://zp4rker.com/`,
