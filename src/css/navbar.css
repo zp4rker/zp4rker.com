@@ -1,0 +1,45 @@
+.card{
+  background-color: #F2F2F2!important;
+}
+.card .sub-c-card,
+.card .card-body{
+  background-color: #FFFFFF;
+  position: relative!important;
+  z-index: 2;
+  transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+  border-radius: 25px;
+}
+.c-navbar{
+  background-color: #FFFFFF;
+}
+
+@media (max-width: 991.98px) {
+  .card .sub-c-card.open,
+  .card .card-body.open{
+    /* left: 235px; */
+    transform: translateX(235px);
+  }
+  .offcanvas-collapse {
+    position: absolute;
+    top: 0px; /* Height of navbar */
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    /* padding-right: 1rem; */
+    /* padding-left: 1rem; */
+    /* overflow-x: auto; */
+    /* visibility: hidden; */
+    /* background-color: #CCCCCC; */
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    z-index: -1;
+    /* border-radius: 25px; */
+    /* padding: 15px 25px; */
+    /* transform: translateX(-235px); */
+  }
+  .offcanvas-collapse.open {
+    /* position: fixed; */
+    /* background-color: #FFFFFF; */
+    transform: translateX(-235px);
+    visibility: visible;
+  }
+}

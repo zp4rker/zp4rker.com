@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+html,
+body{
+    height: 100%;
+    max-width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(116.82deg, #F1C40F 0%, #E74C3C 50%, #9B59B6 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+/* Global Tag */
+h1, .h1{
+    /* font-size: calc(2.5rem - 5px)!important; */
+    font-size: 30px!important;
+    font-weight: 400!important;
+}
+h2, .h2{
+    /* font-size: calc(2rem - 5px)!important; */
+    font-size: 28px!important;
+    font-weight: 400!important;
+}
+h3, .h3{
+    /* font-size: calc(1.75rem - 5px)!important; */
+    font-size: 26px!important;
+    font-weight: 400!important;
+}
+h4, .h4{
+    /* font-size: calc(1.5rem - 5px)!important; */
+    font-size: 24px!important;
+    font-weight: 400!important;
+}
+h5, .h5{
+    /* font-size: calc(1.25rem - 5px)!important; */
+    font-size: 22px!important;
+    font-weight: 400!important;
+}
+h6, .h6{
+    /* font-size: calc(1rem - 5px)!important; */
+    font-size: 20px!important;
+    font-weight: 400!important;
+}
+p{
+    font-weight: 300;
+    margin: 0!important;
+    padding: 0!important;
+}
+.content a{
+    color: #E67E22;
+    text-decoration: none;
+}
+.content a:hover{
+    color: #E67E22;
+    text-decoration: underline;
+}
+
+/* Global Main */
+#___gatsby,
+#gatsby-focus-wrapper,
+main,
+main .container,
+main .container .row
+{
+    height: 100%;
+}
+main .card,
+main .sub-c-card{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    height: 100%;
+    border: none;
+}
+main .card .card-head{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #FFFFFF;
+    padding-top: 5px;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+}
+main .card .card-head .navbar-brand{
+    padding-right: 0;
+    margin-right: 10px;
+}
+@media (max-width: 991.98px) {
+    main .card,
+    main .sub-c-card{
+        height: auto;
+    }
+    main .sub-c-card .content p.intro{
+        padding-top: 50px!important;
+        padding-bottom: 50px!important;
+    }
+    .content .intro{
+        font-size: 18px!important;
+    }
+    main .card .card-head .navbar-brand{
+        padding-right: 0;
+        margin-right: 0;
+    }
+    main .card .card-head,
+    main .card .card-body{
+        padding-left: 25px!important;
+        padding-right: 25px!important;
+    }
+    main .card .card-head{
+        padding-top: 5px;
+    }
+}
+main .card .card-body,
+main .card .card-foot{
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+main .card .card-body{
+    height: calc(100% - (46px + 81px));
+}
+
+/* Topbar */
+.navbar-brand,
+main .navbar .navbar-nav .nav-item a{
+    font-size: 38px!important;
+    font-weight: 700!important;
+    color: #A9A9A9;
+}
+/* main .navbar .navbar-nav .nav-item a{
+    text-transform: capitalize;
+} */
+.navbar-toggler.c-navbar-toggler{
+    border: none;
+    cursor: pointer;
+}
+
+/* Content */
+.content .intro{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-align: left;
+}
+.content label.title{
+    font-weight: 400;
+    font-size: 32px;
+    display: inline-block;
+}
+.content .category a{
+    color: #E67E22;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.content .category a:hover,
+#articles a{
+    color: #212529;
+}
+#articles a:hover{
+    text-decoration: none;
+}
+#articles a:hover article h2{
+    text-decoration: underline;
+}
+#articles #blog-viewall a:hover{
+    text-decoration: underline;
+}
+#articles article h2{
+    font-size: 18px;
+    font-weight: 700;
+}
+#articles article span{
+    font-size: 14px;
+    /* display: block; */
+}
+#articles article span,
+#articles article h2 span{
+    color: #CCCCCC;
+    font-weight: 300;
+}
+#articles article h2 a{
+    color: #212529;
+    text-decoration: none;
+}
+#articles article h2 a:hover{
+    color: #E67E22;
+    text-decoration: underline;
+}
+#articles article p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 300;
+    font-size: 18px;
+    display: block;
+}
+#articles #blog-viewall a{
+    color: #E67E22;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+/* #projects .card .img-placeholder{
+    cursor: pointer;
+} */
+#projects .card .img-container{
+    position: relative;
+}
+#projects .card .img-container img{
+    width: 100%;
+    display: block;
+}
+#projects .card .img-container .overlay{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+}
+#projects .card .img-container:hover .overlay{
+    opacity: .7;
+}
+#projects .card .img-container .overlay h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+#projects .card .img-container .overlay h2 span{
+    font-size: 18px;
+    font-weight: 300;
+    display: inline-block;
+}
+
+#blogpost #header .subtitle{
+    color: #A9A9A9;
+    font-weight: 300;
+    font-size: 14px;
+}
+#blogpost #body blockquote{
+    border-left: #E67E22 solid 5px;
+    padding-left: 10px;
+    font-weight: 300;
+}
+
+
+/* Footer */
+.card-foot .footer img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 10px;
+}
+.card-foot{
+    background-color: #FFFFFF;
+    z-index: 2;
+}
+.card-foot .footer #github img,
+.card-foot .footer #discord img,
+.card-foot .footer #twitter img,
+.card-foot .footer #linkedin img,
+.card-foot .footer #paypal{
+    filter: invert(50%) sepia(0%) saturate(1%) hue-rotate(164deg) brightness(97%) contrast(88%);
+    transition: .5s;
+}
+.card-foot .footer #github:hover img,
+.card-foot .footer #discord:hover img,
+.card-foot .footer #twitter:hover img,
+.card-foot .footer #linkedin:hover img,
+.card-foot .footer #paypal:hover{
+    filter: none;
+}
