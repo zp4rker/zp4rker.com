@@ -5,7 +5,7 @@ module.exports = {
       name: `zp4rker`,
       summary: `a layman doing his best to seek and spread knowledge in a time where ignorance prevails.`,
     },
-    description: `zp4rker's personal blog`,
+    description: `zp4rker's personal site`,
     siteUrl: `https://zp4rker.com/`,
     social: {
       twitter: `zp4rker`,
