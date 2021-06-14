@@ -139,10 +139,12 @@ main .navbar .navbar-nav .nav-item a{
 
 /* Content */
 .content .intro{
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
     font-size: 24px;
-    text-align: left;
+    text-align: center;
+    margin: 0 auto !important;
+    width: 85%;
 }
 .content label.title{
     font-weight: 400;
@@ -263,7 +265,7 @@ main .navbar .navbar-nav .nav-item a{
 .card-foot .footer img{
     width: 30px;
     height: 30px;
-    margin: 0 10px 0 10px;
+    margin: 0 10px;
 }
 .card-foot{
     background-color: #FFFFFF;

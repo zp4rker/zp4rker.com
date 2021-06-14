@@ -1,12 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
+
+import LocalImage from "./local-image"
 
 const Footer = () => {
     return (
         <div className="footer d-flex justify-content-center">
-            <Link to="https://github.com/zp4rker" id="github" target="_blank"><img src="../images/github.svg" alt="Github"/></Link>
-            <Link to="https://github.com/zp4rker" id="discord" target="_blank"><img src="../images/discord.svg" alt="Discord"/></Link>
-            <Link to="https://github.com/zp4rker" id="paypal" target="_blank"><img src="../images/paypal.svg" alt="PayPal"/></Link>
+            <a href="https://github.com/zp4rker" id="github" target="_blank" rel="noreferrer"><LocalImage fileName="github.svg" alt="Github"/></a>
+            <a href="https://github.com/zp4rker" id="discord" target="_blank" rel="noreferrer"><LocalImage fileName="discord.svg" alt="Discord"/></a>
+            <a href="https://github.com/zp4rker" id="paypal" target="_blank" rel="noreferrer"><LocalImage fileName="paypal.svg" alt="PayPal"/></a>
         </div>
     )
 }
