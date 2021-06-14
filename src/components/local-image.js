@@ -13,7 +13,7 @@ const LocalImage = ({ fileName, alt }) => {
     }
     `)
     return (
-        <img src={data.allFile.nodes.find(node => node.base == fileName).publicURL} alt={alt}/>
+        <img src={data.allFile.nodes.find(node => node.base === fileName).publicURL} alt={alt}/>
     )
 }
 
