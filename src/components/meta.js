@@ -2,7 +2,7 @@ import * as React from "react"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Meta = ({ title, description, meta}) => {
+const Meta = ({ title, description, meta }) => {
     const { site } = useStaticQuery(graphql`
         query {
             site {
@@ -20,6 +20,7 @@ const Meta = ({ title, description, meta}) => {
 
     return (
         <Helmet
+            htmlAttributes={{lang}}
             title={title}
             titleTemplate={`${metaTitle} | %s`}
             meta={[
@@ -34,15 +35,19 @@ const Meta = ({ title, description, meta}) => {
                 {
                     property: `og:description`,
                     content: metaDesc
+                },
+                {
+                    property: `og:type`,
+                    content: `website`
                 }
-            ]}
+            ].concat(meta)}
         />
     )
 }
 
 Meta.defaultProps = {
-    title: ``,
-    description: ``,
+    title: `Some page`,
+    description: `zp4rker's site`,
     meta: []
 }
 
