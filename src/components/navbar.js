@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className={"navbar-collapse offcanvas-collapse "+(state.menu?'open':'')} id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-0 mb-lg-0">
             <li className="nav-item">
-              <Link to="/blog" onClick={handleToggleFalse} onKeyDown={handleToggleFalse} className="nav-link" activeClassName="active">blog </Link>
+              <Link to="/posts" onClick={handleToggleFalse} onKeyDown={handleToggleFalse} className="nav-link" activeClassName="active">blog </Link>
             </li>
             <li className="nav-item">
               <Link to="/projects" onClick={handleToggleFalse} onKeyDown={handleToggleFalse} className="nav-link" activeClassName="active" href="#">projects</Link>
