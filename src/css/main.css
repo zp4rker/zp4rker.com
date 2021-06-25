@@ -146,9 +146,9 @@ main .navbar .navbar-nav .nav-item a{
     margin: 0 auto !important;
     width: 85%;
 }
-.content label.title{
+.content h1.title{
     font-weight: 400;
-    font-size: 32px;
+    font-size: 32px !important;
     display: inline-block;
 }
 .content .category a{
