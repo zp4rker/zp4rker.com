@@ -13,6 +13,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
+    - run: |
+        git config --global user.email "iam@zp4rker.com"
+        git config --global user.name "zp4rker"
     - run: yarn && yarn deploy
       env:
         PA_TOKEN: ${{ secrets.PA_TOKEN }}
