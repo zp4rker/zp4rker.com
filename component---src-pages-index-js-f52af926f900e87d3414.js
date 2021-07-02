@@ -1,0 +1,2 @@
+(self.webpackChunkzp4rker_com=self.webpackChunkzp4rker_com||[]).push([[678],{7704:function(e,r,t){"use strict";t.r(r);var n=t(7294),o=t(7488);r.default=function(){return n.createElement(o.Z,{title:"Home",centerContent:!0,showFooter:!0},n.createElement("p",{className:"intro"},"Hey there! I'm zp4rker, just your regular old guy. My main interests are in religion, programming, history, tech and a bunch of other stuff."))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-f52af926f900e87d3414.js.map

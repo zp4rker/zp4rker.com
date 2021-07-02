@@ -1,0 +1,2 @@
+(self.webpackChunkzp4rker_com=self.webpackChunkzp4rker_com||[]).push([[883],{9616:function(e,t,n){"use strict";n.r(t);var l=n(7294),r=n(7488);t.default=function(){return l.createElement(r.Z,{title:"404: Page not found!",centerContent:!0},l.createElement("h1",null,"Unable to find that page!"),l.createElement("p",null,"Looks like you're a bit lost..."))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-548c6e46a2629c5c5371.js.map
