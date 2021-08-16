@@ -30,9 +30,6 @@ const Navbar = () => {
             <li className="nav-item">
               <Link to="/projects" onClick={handleToggleFalse} onKeyDown={handleToggleFalse} className="nav-link" activeClassName="active" href="#">projects</Link>
             </li>
-            <li className="nav-item">
-              <Link to="/portofolio" onClick={handleToggleFalse} onKeyDown={handleToggleFalse} className="nav-link" activeClassName="active" href="#">portofolio</Link>
-            </li>
           </ul>
         </div>
         <Link to="/" onClick={handleToggleFalse} onKeyDown={handleToggleFalse} className="navbar-brand">zp4rker</Link>
