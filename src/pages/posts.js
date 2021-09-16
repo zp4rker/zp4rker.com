@@ -25,7 +25,7 @@ const PostsPage = () => {
     return (
         <Layout title="Blog">
             <div id="topics">
-                <h1 className="title">Topics</h1>
+                <h2 className="title">Topics</h2>
                 <div className="category">
                     {["Islām", "History", "Programming"].map((item, index) => {
                     return <Link key={index} to={"/category/"+item}>{item}</Link>
@@ -33,7 +33,7 @@ const PostsPage = () => {
                 </div>
             </div>
             <div id="articles">
-                <h1 className="title mt-3">Recent Posts</h1>
+                <h2 className="title mt-3">Recent Posts</h2>
                     {posts.map((post, index) => {
                         var divider = <></>
                         if (index < (posts.length - 1)) {
@@ -42,9 +42,9 @@ const PostsPage = () => {
                         return (
                             <>
                                 <Link to={`/blog${post.fields.slug}`}><article className="mt-3 mb-3">
-                                    <h2 className="pb-0 mb-0 h5">{post.frontmatter.title}</h2>
-                                    <span>{post.frontmatter.date}</span>
-                                    <p className="pt-0 mt-0">{post.excerpt}</p>
+                                    <h2 className="pb-0 mb-0">{post.frontmatter.title}</h2>
+                                    <span class="text-muted">{post.frontmatter.date}</span>
+                                    <p className="mt-0 text-limit-2">{post.excerpt}</p>
                                 </article></Link>
                                 {divider}
                             </>
