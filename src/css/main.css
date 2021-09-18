@@ -48,9 +48,6 @@ main .container .row
 {
     height: 100%;
 }
-main .container{
-    max-width: 960px;
-}
 main .card,
 main .sub-c-card{
     background: #FFFFFF;
