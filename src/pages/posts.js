@@ -51,7 +51,7 @@ const PostsPage = () => {
                         )
                     })}
                 <div id="blog-viewall" className="pt-2">
-                    <Link to="/blog/all">View all →</Link>
+                    <Link to="/posts/all">View all →</Link>
                 </div>
             </div>
         </Layout>
